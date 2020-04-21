@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	 <link rel="icon" type="image/png" href="images/logo.jpg" />
+<title>Ensemble pour l'Afrique</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+</head>
+ <body onload="initialize()">
+
+<div class="super_container" id="top">
+			<header class="header1" style="background-color: white">
+				<nav style="font-size: 1.1rem" class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="#">
+						<div class="logo"><a href="#"><img class="logo_1" src="images/logo.jpg" alt="" width="100" height="100" style="margin-right: 400px"></a></div>
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav active">
+							<li class="nav-item">
+								<a class="nav-link" href="index.php"> Accueil</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.php">Qui sommes nous?</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="projets.html">Projets</a>
+							</li>
+							<li  class="nav-item">
+								<a class="nav-link" href="forum.php">Forum</a>
+							</li>             
+							<li class="nav-item">
+								<a class="nav-link" href="login.php"> Adhérent</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="login_admin.php">Membre</a>
+								<li class="nav-item">
+									<a class="nav-link"  href="adhesion.php" style="margin-right: 5px">Adhésion</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+
+<br><br>
+	<div align="center">
+	<div id="maDiv" style=" margin: 50px;width: 900px; height: 600px"></div></div>
+
+	<br>
+	<!-- offres gratuits -->
+	<div class="section_title text-center">
+		<div>EPA</div>
+			<br>
+		<h5>Offres</h5><br>
+		<h1>Prestations</h1>
+	</div>
+	<br><hr>
+	<div class="container">
+			<div class="row offering_row">
+				
+				<!-- coord -->
+				<div class="col-xl-6 col-md-6">
+					
+					<div class="card shadow" style="width: 15rem,height: 30em">
+						<div class="text-center">
+							<p>Offert</p>
+						</div>
+						<div class="inner">
+							<img class="card-img-top" src="images/im9.jpg" alt="">
+						</div>
+						<div class="card-body">
+							<p>CONTE Pour Toute La Famille (prestation offerte)</p><p>Si tu me crois c'est que j'ai menti  27/11/2011. Spectacle donné par Mme Françoise BARRET, au bénéfice de l'association "Ensemble pour l'Afrique : libre participation;</p>
+							</div>
+						</div>
+				</div>
+				<div class="col-xl-6 col-md-6">
+					
+					<div class="card shadow" style="width: 15rem,height: 30em">
+						<div class="text-center">
+							<p>Offert</p>
+						</div>
+						<div class="inner">
+							<img class="card-img-top" src="images/im8.jpg" alt="">
+						</div>
+						<br>
+						<div class="card-body">
+							<p>Sur les ailes du vent  24/11/2013 (prestation offerte)</p>
+							<p>Par Mme Françoise Barret. Histoire pour tous les âges  à écouter sans modération à partir de 7 ans</p>
+							<p>Libre participation</p>
+							</div>
+						</div>
+				</div>
+						
+				</div>
+	<!-- Footer -->
+				<hr>
+						<hr>
+		<footer class="new_footer_area bg_color">
+			<div class="new_footer_top">
+				<div class="container">
+				
+		</div>
+		<br>
+					<div class="row">
+						<div class="col-lg-3 offset-1 col-md-6">
+							<div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+								<h3 class="f-title f_600 t_color f_size_18">Menu</h3>
+								<ul class="list-unstyled f_list">
+									<li><a href="index.php">Accueil</a></li>
+									<li><a href="projets.html">Projets</a></li>
+									<li><a href="forum.php">Forum</a></li>
+									<li><a href="adhesion.php">Adhésion</a></li>
+									<li><a href="login.php">Connexion</a></li>
+									<li><a href="login_admin.php">Membre</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+								<h3 class="f-title f_600 t_color f_size_18">Contact</h3>
+								<ul class="list-unstyled f_list">
+									<li>Identification INSEE : N° de SIRET 484 104237 00017, Code APE  913E</li>
+									<li>Le siège social est fixé  au 10, Avenue Paul Appel 75014 Paris – France</li>
+									<li>email:contact@epa.com</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 offset-1 col-md-6">
+							<div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+								
+								<div class="f_social_icon">
+									<a href="#"><img src="images/logo.jpg" width="100" height="100"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+		<br>
+		<div class="container text-center">
+			<div class="row align-items-center">
+				<div class="col-lg-12 col-sm-7">
+					<p class="mb-0 f_400"><p>&copy; Copyrights <strong>odile hamrioui - WEB Factory 2K20</strong>. All Rights Reserved </p>
+				</div>
+				
+			</div>
+		</div>
+	</footer>		
+	</div>
+
+</div>
+
+<script src="js/menu.js"></script>
+<script src="styles/bootstrap-4.1.2/popper.js"></script>
+<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="plugins/jquery-ui.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+
+    function initialize() {// create custom icon
+		var firefoxIcon = L.icon({
+        iconUrl: 'images/star.svg',
+        iconSize: [20,20], // size of the icon
+        popupAnchor: [0,-15]
+    });
+
+    var mymap = L.map('maDiv').setView([48.833, 2.333],4); // LIGNE 14
+	
+        var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { // LIGNE 16
+            attribution: '© OpenStreetMap contributors',
+            maxZoom: 10
+        });
+    
+		mymap.addLayer(osmLayer);
+		
+		//variables
+
+		var northWest = L.latLng(100, -180);
+		var southEast = L.latLng(-90, 180);
+		var bornes = L.latLngBounds(northWest, southEast);
+
+		//Définition de la map
+		
+
+
+		// Juste pour changer la forme du curseur par défaut de la souris
+		document.getElementById('maDiv').style.cursor = 'crosshair'
+		mymap.fitBounds(bornes);
+
+		// Initilisation d'un popup
+		var popup = L.popup();
+		var photoImg = '<img src="images/star.svg" height="150px" width="150px"/>';
+
+		// Fonction de conversion au format GeoJSON
+		function coordGeoJSON(latlng,precision) {
+				return '[' +
+					L.Util.formatNum(latlng.lng, precision) + ',' +
+					L.Util.formatNum(latlng.lat, precision) + ']';
+		}
+
+		// Fonction qui réagit au clic sur la carte (e contiendra les données liées au clic)
+	 	function onMapClick(e) {
+			popup.setLatLng(e.latlng)
+			.setContent("<center>My Photo </center>" + "</br>"+ photoImg)
+			.openOn(mymap);
+			mymap.setZoom(5);
+		}
+			//on ajoute des marqueurs sur les pays où se trouve le projet en question
+			// Association Evenement/Fonction handler
+			mymap.on('click', onMapClick);
+
+			// Nous initialisons une liste de marqueurs
+			var villes = {
+				"Paris": { "lat": 48.852969, "lon": 2.349903, "content": " Projet de mise en place d'une structure d'accueil pour les étudiants et stagiaires de passage à Paris et sa Région en partenariat avec la Maison des Associations de Paris 14"},
+				"Togo": { "lat": 5.3096600, "lon": -4.0126600, "content": " <b> Projet : </b> L'eau de la vie, l'eau de tous les espoirs - Convention de Partenariat EPA Ensemble Pour l'Afrique /  groupe Total (18/12/2006) <br> <b> Projet : </b> Concert de Jazz et de musique classique 16/06/2007 <br> <b> Actions humanitaire, projet de développement rural à Yokélé, Fada-Copé </b> " }};
+			
+				
+			for (ville in villes) {
+			var marker = L.marker([villes[ville].lat, villes[ville].lon] ,{icon: firefoxIcon}).addTo(mymap).bindTooltip(ville, {permanent: true, direction: 'top'});
+			marker.bindPopup(villes[ville].content);;}
+
+
+			// Juste pour changer la forme du curseur par défaut de la souris
+			document.getElementById('maDiv').style.cursor = 'crosshair'
+			mymap.fitBounds(bornes);
+			// Initilisation d'un popup
+			var popup = L.popup();
+			// Fonction de conversion au format GeoJSON
+			function coordGeoJSON(latlng,precision) {
+				return '[' +
+					L.Util.formatNum(latlng.lng, precision) + ',' +
+					L.Util.formatNum(latlng.lat, precision) + ']';
+			}
+			// Fonction qui réagit au clic sur la carte (e contiendra les données liées au clic)
+	 	function onMapClick(e) {
+
+				popup.setLatLng(e.latlng)
+					.setContent(ville['content'])
+					.openOn(mymap);
+					mymap.setZoom(5);
+
+			}
+
+			//on ajoute des marqueurs sur les pays où se trouve le projet en question
+			// Association Evenement/Fonction handler
+			mymap.on('click', onMapClick);
+
+			// Nous initialisons une liste de marqueurs
+			var villes = {
+				"Paris": { "lat": 48.852969, "lon": 2.349903, "content": " <img src='images/etudiants.jpg' alt='maptime logo gif' width='350px'/>Projet de mise en place d'une structure d'accueil pour les étudiants et stagiaires de passage à Paris et sa Région en partenariat avec la Maison des Associations de Paris 14"},
+				"Togo": { "lat": 5.3096600, "lon": -4.0126600, "content": " <b> Projet : </b> <img src='images/enfants.jpg' alt='maptime logo gif' width='350px'/>L'eau de la vie, l'eau de tous les espoirs - Convention de Partenariat EPA Ensemble Pour l'Afrique /  groupe Total (18/12/2006) <br> <b> Projet : </b> Concert de Jazz et de musique classique 16/06/2007 <br> <b> Actions humanitaire, projet de développement rural à Yokélé, Fada-Copé </b> " }};
+			
+				
+			for (ville in villes) {
+			var marker = L.marker([villes[ville].lat, villes[ville].lon], {icon: firefoxIcon}).addTo(mymap);
+			marker.bindPopup(villes[ville].content);;
+
+			marker.on('click', function(e){
+					
+					mymap.setView(e.latlng, 13);
+					var circle = L.circle([e.latLng, e.latLngBounds], {
+					color: 'red',
+					fillColor: '#f03',
+					fillOpacity: 0.5,
+					radius: 5000
+					}).addTo(mymap);
+				});
+			
+		}
+    }
+</script>
